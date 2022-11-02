@@ -138,8 +138,7 @@
     text-align: "centre";
     color: black;
     padding-left: 150px;
-    margin-top: 90px;
-    
+    margin-top: 90px; 
   }
 
   .about{
@@ -151,11 +150,7 @@
     text-align: left;
     color: grey;
     padding-left: 150px;
-    
-  }
-  
-
-  
+  }  
   .dashboard{
     font-family: 'Outfit', sans-serif;
     font-size: 48px;
