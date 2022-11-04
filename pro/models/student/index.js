@@ -37,10 +37,7 @@ const StudentSchema = new mongoose.Schema({
         type: String,
         maxlength: 500
     },
-    SchoolName: {
-        type: String,
-        maxlength: 500
-    },
+  
     userverified: {
         email: {
             type: Boolean,

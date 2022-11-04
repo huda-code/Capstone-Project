@@ -17,7 +17,7 @@ const router = express.Router();
 
 router.post( '/signup',registerValidation(), errorMiddleware,async (req, res) => {
         try {
-            let { firstname, lastname, email, password,address, password2, SchoolName, phone } = req.body;
+            let { firstname, lastname, email, password,address, password2, phone } = req.body;
             console.log(req.body);
 
 
@@ -46,7 +46,7 @@ router.post( '/signup',registerValidation(), errorMiddleware,async (req, res) =>
             password = await bcrypt.hash(password, 12); //applying 12 rounds of salt
 
             //making our own object to store in db
-            let StudentData = { firstname, lastname, email, password,address, password2, SchoolName, phone };
+            let StudentData = { firstname, lastname, email, password,address, password2,  phone };
 
             // mongodb dat
             // add user_id to our userData object and tasks array
